@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es-MX"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TechZone · Inventario y disponibilidad en tiempo real</title>
+<meta name="description" content="Consulta el inventario de TechZone en Mérida: audífonos, teclados mecánicos, smartwatches y bocinas Bluetooth con disponibilidad y precios actualizados.">
+<meta name="theme-color" content="#07090f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-gothic">
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="site-shell">
+
+<header class="topbar-wrap"><div class="container"><div class="topbar">
+<a class="brand" href="index.html" aria-label="TechZone - Inicio">
+<span class="brand-mark">
+<svg viewBox="0 0 64 64"><defs><radialGradient id="brandGradI" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#e7d39a"/><stop offset="55%" stop-color="#c9a96b"/><stop offset="100%" stop-color="#5a171f"/></radialGradient></defs><rect x="3" y="3" width="58" height="58" rx="3" fill="#0c0710" stroke="#c9a96b" stroke-width="2"/><rect x="7" y="7" width="50" height="50" rx="2" fill="url(#brandGradI)"/><text x="32" y="42" text-anchor="middle" fill="#1a0a0d" font-size="30" font-family="Cinzel, serif" font-weight="900">T</text></svg>
+</span>
+<span class="brand-copy"><strong>TechZone</strong><span>Tienda de electrónica en Mérida</span></span>
+</a>
+<nav class="topbar-nav" aria-label="Navegación principal">
+<a href="index.html">Inicio</a><a href="menu.html">Menú</a><a href="galeria.html">Galería</a><a href="index.html#especialidades">Especialidades</a><a href="index.html#beneficios">Beneficios</a><a href="inventario.html" aria-current="page">Inventario</a><a href="index.html#contacto">Contacto</a>
+</nav>
+<div class="topbar-actions">
+<a class="button-ghost" href="index.html">Ver inicio</a>
+<a class="button" href="tel:9991112233"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Comprar por WhatsApp</a>
+</div></div></div></header>
+
+<main id="main">
+
+<section class="hero inv-hero" id="inicio"><div class="container">
+<div class="hero-copy">
+<span class="kicker"><span class="dot"></span> Inventario · Disponible en Mérida</span>
+<h1>Stock <span class="grad-text">actualizado</span> al instante.</h1>
+<p class="lede">Consulta disponibilidad, precios y variantes de cada producto de nuestro catálogo. Sistema sincronizado para que siempre sepas qué hay listo para envío inmediato.</p>
+
+<div class="inv-toolbar" role="search" aria-label="Buscar en inventario">
+<label class="inv-search" for="invSearch">
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+<input id="invSearch" type="search" placeholder="Buscar por nombre, SKU o categoría…" autocomplete="off">
+</label>
+<div class="inv-filters" role="group" aria-label="Filtros de inventario">
+<button class="inv-chip is-active" type="button" data-filter="all">Todos</button>
+<button class="inv-chip" type="button" data-filter="in">En stock</button>
+<button class="inv-chip" type="button" data-filter="low">Pocas unidades</button>
+<button class="inv-chip" type="button" data-filter="out">Agotados</button>
+</div>
+</div>
+
+<div class="inv-stats">
+<div class="inv-stat"><strong>128</strong><span>Productos en catálogo</span><span class="trend trend-up">▲ 12% este mes</span></div>
+<div class="inv-stat"><strong>94%</strong><span>Disponibilidad inmediata</span><span class="trend trend-up">▲ 3% vs. semana anterior</span></div>
+<div class="inv-stat"><strong>07</strong><span>Productos por reposición</span><span class="trend trend-down">▼ Reposición en 48 h</span></div>
+<div class="inv-stat"><strong>24 h</strong><span>Rotación promedio</span><span class="trend trend-up">▲ Demanda estable</span></div>
+</div>
+</div>
+</div></section>
+
+<section class="section" id="inventario"><div class="container"><div class="surface section-surface">
+<div class="section-head">
+<span class="kicker"><span class="dot"></span> Listado</span>
+<h2>Productos <span class="grad-text">disponibles</span></h2>
+<p>Visualiza el estado real de cada artículo en stock. Selecciona un producto para consultar detalles o apartarlo por WhatsApp.</p>
+</div>
+<div class="ornament"><span class="glyph">❦</span></div>
+
+<div class="inv-table-wrap" role="region" aria-label="Tabla de inventario">
+<table class="inv-table">
+<thead><tr>
+<th scope="col">Producto</th><th scope="col">SKU</th><th scope="col">Categoría</th><th scope="col">Precio</th><th scope="col">Stock</th><th scope="col">Estado</th><th scope="col" style="text-align:right">Acción</th>
+</tr></thead>
+<tbody id="invBody">
+
+<tr data-status="in">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg></span>
+<div class="inv-product-name"><strong>Audífonos Inalámbricos Pro</strong><span>Cancelación de ruido · Bluetooth 5.3</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-AUD-001</span></td><td>Audio</td>
+<td><span class="inv-price">$1,299</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill" style="width:82%"></span></div><span class="inv-stock-note">41 / 50</span></td>
+<td><span class="badge badge-in">En stock</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="in">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h12"/></svg></span>
+<div class="inv-product-name"><strong>Teclado Mecánico RGB</strong><span>Switches red · Iluminación personalizable</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-TEC-014</span></td><td>Periféricos</td>
+<td><span class="inv-price">$1,899</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill" style="width:64%"></span></div><span class="inv-stock-note">32 / 50</span></td>
+<td><span class="badge badge-in">En stock</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="low">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></span>
+<div class="inv-product-name"><strong>Smartwatch Sport Plus</strong><span>GPS · SpO2 · 7 días de batería</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-SMT-022</span></td><td>Wearables</td>
+<td><span class="inv-price">$2,249</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill low" style="width:18%"></span></div><span class="inv-stock-note">7 / 40</span></td>
+<td><span class="badge badge-low">Pocas unidades</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="in">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M11 18h2"/><circle cx="12" cy="13" r="3"/></svg></span>
+<div class="inv-product-name"><strong>Bocina Bluetooth 360°</strong><span>20 W · Resistente al agua IPX7</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-BOC-031</span></td><td>Audio</td>
+<td><span class="inv-price">$899</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill" style="width:74%"></span></div><span class="inv-stock-note">37 / 50</span></td>
+<td><span class="badge badge-in">En stock</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="low">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg></span>
+<div class="inv-product-name"><strong>Mouse Gamer 16K DPI</strong><span>Sensor óptico · 6 botones programables</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-MOU-007</span></td><td>Periféricos</td>
+<td><span class="inv-price">$649</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill low" style="width:22%"></span></div><span class="inv-stock-note">11 / 50</span></td>
+<td><span class="badge badge-low">Pocas unidades</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="out">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+<div class="inv-product-name"><strong>Monitor Curvo 27" QHD</strong><span>165 Hz · 1 ms · HDR10</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-MON-003</span></td><td>Pantallas</td>
+<td><span class="inv-price">$5,499</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill out" style="width:0%"></span></div><span class="inv-stock-note">0 / 15</span></td>
+<td><span class="badge badge-out">Agotado</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Notificar</a></td>
+</tr>
+
+<tr data-status="in">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+<div class="inv-product-name"><strong>Cargador Inalámbrico 15W</strong><span>Carga rápida · Compatible Qi</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-CAR-045</span></td><td>Accesorios</td>
+<td><span class="inv-price">$349</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill" style="width:88%"></span></div><span class="inv-stock-note">44 / 50</span></td>
+<td><span class="badge badge-in">En stock</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+<tr data-status="low">
+<td><div class="inv-product">
+<span class="inv-product-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M5 12h14M5 16h10"/></svg></span>
+<div class="inv-product-name"><strong>Lámpara LED Inteligente</strong><span>16M colores · WiFi · App propia</span></div>
+</div></td>
+<td><span class="inv-sku">TZ-LMP-012</span></td><td>Smart Home</td>
+<td><span class="inv-price">$499</span></td>
+<td><div class="inv-stock-bar"><span class="inv-stock-fill low" style="width:14%"></span></div><span class="inv-stock-note">5 / 35</span></td>
+<td><span class="badge badge-low">Pocas unidades</span></td>
+<td style="text-align:right"><a class="row-action" href="tel:9991112233">Apartar</a></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="inv-actions-bar">
+<p>¿Necesitas un producto que no aparece? Lo conseguimos para ti en <b>48 h</b>.</p>
+<div class="btn-group">
+<a class="button-ghost button-lg" href="menu.html">Ver menú</a>
+<a class="button button-lg" href="tel:9991112233">Solicitar producto<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+</div>
+</div>
+</div></div></section>
+
+<section class="section" id="beneficios"><div class="container"><div class="surface section-surface section-dark">
+<div class="section-head">
+<span class="kicker kicker-light"><span class="dot"></span> Beneficios</span>
+<h2>Inventario <span class="grad-text">siempre al día</span></h2>
+<p>Nuestro sistema refleja existencias reales para que compres con confianza.</p>
+</div>
+<div class="ornament"><span class="glyph">❦</span></div>
+<div class="stats-grid">
+<article class="stat-card"><div class="stat-badge">01</div><strong>Stock verificado</strong><p>Cada unidad es <b>contada físicamente</b> antes de publicarse.</p></article>
+<article class="stat-card"><div class="stat-badge">02</div><strong>Rotación rápida</strong><p>Reposiciones semanales desde nuestros <b>proveedores oficiales</b>.</p></article>
+<article class="stat-card"><div class="stat-badge">03</div><strong>Apartado express</strong><p>Reserva tu producto por <b>WhatsApp</b> en menos de 5 minutos.</p></article>
+<article class="stat-card"><div class="stat-badge">04</div><strong>Notificaciones</strong><p>Te avisamos cuando un producto agotado esté <b>disponible nuevamente</b>.</p></article>
+</div>
+</div></div></section>
+
+<section id="contacto" class="section"><div class="container"><div class="surface section-surface section-cta">
+<div class="cta-grid">
+<div class="cta-copy">
+<span class="kicker kicker-light"><span class="dot"></span> Contacto</span>
+<h2>¿Listo para <span class="grad-text">apartar</span>?</h2>
+<p>Envíanos un mensaje con el producto que te interesa y nuestro equipo confirma disponibilidad en minutos.</p>
+<div class="cta-actions">
+<a class="button button-lg" href="tel:9991112233"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Escríbenos por WhatsApp</a>
+<a class="button-ghost button-lg" href="tel:9991112233">Llamar ahora</a>
+</div>
+</div>
+<div class="contact-grid">
+<article class="contact-card"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div><span class="contact-label">Teléfono / WhatsApp</span><a class="contact-value" href="tel:9991112233">999 111 2233</a></article>
+<article class="contact-card"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="contact-label">Ubicación</span><span class="contact-value">Mérida, Yucatán</span></article>
+</div>
+</div>
+</div></div></section>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-card">
+<div class="footer-brand">
+<span class="brand-mark small"><svg viewBox="0 0 64 64"><defs><radialGradient id="brandGradIF" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#e7d39a"/><stop offset="55%" stop-color="#c9a96b"/><stop offset="100%" stop-color="#5a171f"/></radialGradient></defs><rect x="3" y="3" width="58" height="58" rx="3" fill="#0c0710" stroke="#c9a96b" stroke-width="2"/><rect x="7" y="7" width="50" height="50" rx="2" fill="url(#brandGradIF)"/><text x="32" y="42" text-anchor="middle" fill="#1a0a0d" font-size="30" font-family="Cinzel, serif" font-weight="900">T</text></svg></span>
+<div><strong>TechZone</strong><span>Tienda de electrónica · Mérida</span></div>
+</div>
+<nav class="footer-nav"><a href="index.html">Inicio</a><a href="menu.html">Menú</a><a href="galeria.html">Galería</a><a href="index.html#especialidades">Especialidades</a><a href="index.html#beneficios">Beneficios</a><a href="inventario.html" aria-current="page">Inventario</a><a href="index.html#contacto">Contacto</a></nav>
+<div class="footer-meta"><span>© <span id="year">2026</span> TechZone · Todos los derechos reservados</span><span class="footer-dot">·</span><span>Hecho con ♥ en Mérida</span></div>
+</div></div></footer>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+(function(){
+  const chips = document.querySelectorAll('.inv-chip');
+  const rows  = document.querySelectorAll('#invBody tr');
+  const input = document.getElementById('invSearch');
+  let activeFilter = 'all';
+  function applyFilters(){
+    const term = (input.value || '').trim().toLowerCase();
+    rows.forEach(row => {
+      const status = row.getAttribute('data-status');
+      const text = row.textContent.toLowerCase();
+      const matchStatus = (activeFilter === 'all') || (status === activeFilter);
+      const matchTerm = !term || text.includes(term);
+      row.style.display = (matchStatus && matchTerm) ? '' : 'none';
+    });
+  }
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      activeFilter = chip.getAttribute('data-filter');
+      applyFilters();
+    });
+  });
+  if(input){ input.addEventListener('input', applyFilters); }
+})();
+</script>
+</body></html>
