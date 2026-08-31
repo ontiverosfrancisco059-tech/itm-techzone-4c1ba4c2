@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menú · Smash House Mérida</title>
+<meta name="description" content="Menú completo de Smash House: burgers, combos, papas, bebidas y promociones. Pide a domicilio por WhatsApp en Mérida.">
+<meta name="theme-color" content="#0c0a08">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-smash">
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="site-shell">
+
+<header class="topbar-wrap"><div class="container"><div class="topbar">
+<a class="brand" href="index.html" aria-label="Smash House - Inicio">
+<span class="brand-mark" aria-hidden="true">
+<svg viewBox="0 0 64 64"><defs><linearGradient id="brandGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffd84a"/><stop offset="100%" stop-color="#f2a900"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0c0a08" stroke="#ffd84a" stroke-width="2"/><rect x="6" y="6" width="52" height="52" rx="11" fill="url(#brandGrad)"/><g transform="translate(32 32)"><rect x="-22" y="-13" width="44" height="7" rx="3" fill="#c2410c"/><rect x="-20" y="-3" width="40" height="6" rx="3" fill="#0c0a08"/><rect x="-22" y="6" width="44" height="7" rx="3" fill="#c2410c"/><path d="M-20 -3 Q-12 -10 0 -8 Q12 -10 20 -3" stroke="#0c0a08" stroke-width="2" fill="none"/><circle cx="-12" cy="-3" r="1.5" fill="#ffd84a"/><circle cx="0" cy="-3" r="1.5" fill="#ffd84a"/><circle cx="12" cy="-3" r="1.5" fill="#ffd84a"/></g></svg>
+</span>
+<span class="brand-copy"><strong>Smash House</strong><span>Hamburguesas a la parrilla</span></span>
+</a>
+<nav class="topbar-nav" aria-label="Navegación principal">
+<a href="index.html">Inicio</a>
+<a href="menu.html" aria-current="page">Menú</a>
+<a href="inventario.html">Inventario</a>
+<a href="galeria.html">Galería</a>
+<a href="index.html#especialidades">Especialidades</a>
+<a href="index.html#domicilio">A domicilio</a>
+<a href="index.html#contacto">Contacto</a>
+</nav>
+<div class="topbar-actions">
+<a class="button-ghost" href="index.html">Inicio</a>
+<a class="button" href="https://wa.me/529991112233?text=Hola%20Smash%20House%2C%20quiero%20hacer%20un%20pedido"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Pedir ya</a>
+</div>
+</div></div></header>
+
+<main id="main">
+
+<section class="menu-hero"><div class="container">
+<span class="kicker"><span class="dot"></span> Menú · Smash House</span>
+<h1>Elige tu <span class="grad-text">combo</span> y pídelo a domicilio.</h1>
+<p class="lede">Carne al momento, pan brioche y papas crujientes. Todos los precios son por burger individual; el combo incluye papas + bebida.</p>
+
+<div class="menu-toolbar">
+<div class="menu-tabs" role="tablist">
+<button class="tab is-active" data-filter="all" role="tab" aria-selected="true">Todo</button>
+<button class="tab" data-filter="burgers" role="tab">Burgers</button>
+<button class="tab" data-filter="combos" role="tab">Combos</button>
+<button class="tab" data-filter="papas" role="tab">Papas &amp; sides</button>
+<button class="tab" data-filter="bebidas" role="tab">Bebidas</button>
+<button class="tab" data-filter="postres" role="tab">Postres</button>
+</div>
+<button class="button cart-toggle" id="cart-toggle" type="button" aria-label="Abrir carrito">
+<span class="cart-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/><path d="M3 4h2l2.4 11.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5L22 8H6"/></svg>
+<span class="cart-count" id="cart-count">0</span>
+</span>
+<span>Carrito · <span id="cart-total">$0</span></span>
+</button>
+</div>
+</div></section>
+
+<section id="burgers" class="section"><div class="container"><div class="surface section-surface">
+<div class="section-head">
+<span class="kicker"><span class="dot"></span> Burgers</span>
+<h2>Nuestra <span class="grad-text">carta</span> de la casa</h2>
+<p>Cada burger se cocina al momento. Precio por unidad. Hazla combo agregando papas + bebida por $39 más.</p>
+</div>
+
+<div class="menu-grid">
+
+<article class="menu-item" data-cat="burgers" id="clasica">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="118" rx="74" ry="6" fill="#000" opacity="0.45"/><rect x="40" y="92" width="120" height="12" rx="3" fill="#7a4a18"/><rect x="40" y="78" width="120" height="12" rx="3" fill="#5a2a13"/><path d="M38 78 L48 70 L78 78 L118 68 L158 78 L162 80 L152 88 L120 84 L80 86 Z" fill="#ffd84a"/><path d="M40 68 Q70 54 100 48 Q130 54 160 68 Q152 76 120 74 L80 74 Q48 76 40 68 Z" fill="#f4b860"/><circle cx="78" cy="60" r="1" fill="#fff7d6"/><circle cx="100" cy="56" r="1.2" fill="#fff7d6"/><circle cx="122" cy="60" r="1" fill="#fff7d6"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Clásica</span>
+<h3>Clásica Smash</h3>
+<p>Carne 150 g, cheddar, lechuga, jitomate, cebolla, salsa de la casa, pan brioche.</p>
+<div class="menu-foot">
+<span class="menu-price">$89</span>
+<button class="add-btn" data-name="Clásica Smash" data-price="89" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="burgers" id="bbq">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="94" width="128" height="10" rx="3" fill="#7a4a18"/><rect x="36" y="80" width="128" height="10" rx="3" fill="#5a2a13"/><rect x="36" y="68" width="128" height="10" rx="3" fill="#5a2a13"/><path d="M34 68 L46 60 L76 68 L116 58 L156 68 L162 72 L150 84 L60 80 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/><path d="M36 70 Q66 80 100 72 Q134 80 162 70" stroke="#7a3a18" stroke-width="1" fill="none" opacity="0.6"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">★ Top ventas</span>
+<h3>Doble Bacon BBQ</h3>
+<p>Doble carne 200 g, tocino crujiente, aros de cebolla, cheddar y BBQ ahumada estilo Kansas.</p>
+<div class="menu-foot">
+<span class="menu-price">$129</span>
+<button class="add-btn" data-name="Doble Bacon BBQ" data-price="129" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="burgers" id="diablo">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="74" ry="6" fill="#000" opacity="0.45"/><rect x="38" y="92" width="124" height="12" rx="3" fill="#7a4a18"/><rect x="38" y="80" width="124" height="12" rx="3" fill="#3b1a0a"/><g fill="#a01a10"><ellipse cx="74" cy="84" rx="14" ry="4"/><ellipse cx="120" cy="84" rx="14" ry="4"/></g><path d="M36 70 L46 62 L76 70 L116 60 L156 70 L160 72 L150 80 L60 76 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Picante 🔥</span>
+<h3>Diablo Habanero</h3>
+<p>Carne 200 g, pepper jack, jalapeños, cebolla morada, salsa de la casa con habanero.</p>
+<div class="menu-foot">
+<span class="menu-price">$139</span>
+<button class="add-btn" data-name="Diablo Habanero" data-price="139" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="burgers" id="swiss">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="92" width="128" height="10" rx="3" fill="#7a4a18"/><rect x="36" y="78" width="128" height="10" rx="3" fill="#5a2a13"/><g fill="#f4b860" opacity="0.95"><circle cx="74" cy="84" r="5"/><circle cx="92" cy="86" r="5"/><circle cx="114" cy="84" r="5"/><circle cx="134" cy="86" r="5"/></g><path d="M34 68 L46 60 L76 68 L116 58 L156 68 L160 72 L150 80 L60 76 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Premium</span>
+<h3>Champiñón Swiss</h3>
+<p>Carne 180 g, queso suizo, champiñones salteados con ajo, cebolla caramelizada y romero.</p>
+<div class="menu-foot">
+<span class="menu-price">$119</span>
+<button class="add-btn" data-name="Champiñón Swiss" data-price="119" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="burgers" id="triple">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="118" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="92" width="128" height="12" rx="3" fill="#7a4a18"/><rect x="36" y="78" width="128" height="12" rx="3" fill="#5a2a13"/><rect x="36" y="66" width="128" height="12" rx="3" fill="#5a2a13"/><rect x="36" y="54" width="128" height="12" rx="3" fill="#5a2a13"/><path d="M34 54 L46 46 L76 54 L116 44 L156 54 L160 58 L150 66 L60 62 Z" fill="#ffd84a"/><path d="M36 44 Q66 30 100 24 Q134 30 162 44 Q154 52 120 50 L80 50 Q44 52 36 44 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Doble</span>
+<h3>Triple Monster</h3>
+<p>Triple carne 300 g, triple cheddar, bacon, cebolla crispy y salsa BBQ. Solo para los más hambrientos.</p>
+<div class="menu-foot">
+<span class="menu-price">$169</span>
+<button class="add-btn" data-name="Triple Monster" data-price="169" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="burgers" id="veggie">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="118" rx="74" ry="6" fill="#000" opacity="0.45"/><rect x="38" y="92" width="124" height="12" rx="3" fill="#7a4a18"/><rect x="38" y="78" width="124" height="12" rx="3" fill="#5a2a13"/><g fill="#a01a10" opacity="0.85"><circle cx="74" cy="84" r="3"/><circle cx="100" cy="86" r="3"/><circle cx="126" cy="84" r="3"/></g><path d="M36 70 L46 62 L76 70 L116 60 L156 70 L160 72 L150 80 L60 76 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Vegetariana</span>
+<h3>Veggie Garden</h3>
+<p>Medallón de garbanzo y portobello, queso mozzarella, palta, tomate, germinado y alioli de albahaca.</p>
+<div class="menu-foot">
+<span class="menu-price">$99</span>
+<button class="add-btn" data-name="Veggie Garden" data-price="99" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+</div>
+</div></div></section>
+
+<section id="combos" class="section"><div class="container"><div class="surface section-surface section-dark">
+<div class="section-head">
+<span class="kicker kicker-light"><span class="dot"></span> Combos</span>
+<h2>Más burger por <span class="grad-text">menos</span></h2>
+<p>Tu burger favorita + papas a la francesa + bebida 600 ml. Precio final con todo incluido.</p>
+</div>
+
+<div class="menu-grid">
+
+<article class="menu-item menu-item-combo" data-cat="combos">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="118" rx="74" ry="6" fill="#000" opacity="0.45"/><rect x="40" y="92" width="120" height="12" rx="3" fill="#7a4a18"/><rect x="40" y="78" width="120" height="12" rx="3" fill="#5a2a13"/><path d="M38 78 L48 70 L78 78 L118 68 L158 78 L162 80 L152 88 L120 84 L80 86 Z" fill="#ffd84a"/><path d="M40 68 Q70 54 100 48 Q130 54 160 68 Q152 76 120 74 L80 74 Q48 76 40 68 Z" fill="#f4b860"/><circle cx="78" cy="60" r="1" fill="#fff7d6"/><circle cx="100" cy="56" r="1.2" fill="#fff7d6"/><circle cx="122" cy="60" r="1" fill="#fff7d6"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Combo</span>
+<h3>Combo Clásica</h3>
+<p>Clásica Smash + papas a la francesa + bebida 600 ml.</p>
+<div class="menu-foot">
+<span class="menu-price-old">$128</span>
+<span class="menu-price">$119</span>
+<button class="add-btn" data-name="Combo Clásica" data-price="119" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-combo menu-item-featured" data-cat="combos">
+<div class="menu-featured-badge">★ MÁS PEDIDO</div>
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="94" width="128" height="10" rx="3" fill="#7a4a18"/><rect x="36" y="80" width="128" height="10" rx="3" fill="#5a2a13"/><rect x="36" y="68" width="128" height="10" rx="3" fill="#5a2a13"/><path d="M34 68 L46 60 L76 68 L116 58 L156 68 L162 72 L150 84 L60 80 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/><path d="M36 70 Q66 80 100 72 Q134 80 162 70" stroke="#7a3a18" stroke-width="1" fill="none" opacity="0.6"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Combo</span>
+<h3>Combo Doble Bacon BBQ</h3>
+<p>Doble Bacon BBQ + papas crujientes + bebida 600 ml.</p>
+<div class="menu-foot">
+<span class="menu-price-old">$168</span>
+<span class="menu-price">$159</span>
+<button class="add-btn" data-name="Combo Doble Bacon BBQ" data-price="159" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-combo" data-cat="combos">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="92" width="128" height="12" rx="3" fill="#7a4a18"/><rect x="36" y="78" width="128" height="12" rx="3" fill="#3b1a0a"/><g fill="#a01a10"><ellipse cx="74" cy="84" rx="14" ry="4"/><ellipse cx="120" cy="84" rx="14" ry="4"/></g><path d="M34 70 L46 62 L76 70 L116 60 L156 70 L160 72 L150 80 L60 76 Z" fill="#ffd84a"/><path d="M36 58 Q66 44 100 38 Q134 44 162 58 Q154 66 120 64 L80 64 Q44 66 36 58 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Combo</span>
+<h3>Combo Diablo</h3>
+<p>Diablo Habanero + papas a la francesa + bebida 600 ml.</p>
+<div class="menu-foot">
+<span class="menu-price-old">$178</span>
+<span class="menu-price">$169</span>
+<button class="add-btn" data-name="Combo Diablo" data-price="169" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-combo" data-cat="combos">
+<div class="menu-art" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><ellipse cx="100" cy="120" rx="76" ry="6" fill="#000" opacity="0.45"/><rect x="36" y="92" width="128" height="10" rx="3" fill="#7a4a18"/><rect x="36" y="78" width="128" height="10" rx="3" fill="#5a2a13"/><rect x="36" y="66" width="128" height="10" rx="3" fill="#5a2a13"/><rect x="36" y="54" width="128" height="10" rx="3" fill="#5a2a13"/><path d="M34 54 L46 46 L76 54 L116 44 L156 54 L160 58 L150 66 L60 62 Z" fill="#ffd84a"/><path d="M36 44 Q66 30 100 24 Q134 30 162 44 Q154 52 120 50 L80 50 Q44 52 36 44 Z" fill="#f4b860"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Combo Familiar</span>
+<h3>Combo Triple Monster</h3>
+<p>Triple Monster + papas grandes + 2 bebidas 600 ml.</p>
+<div class="menu-foot">
+<span class="menu-price-old">$228</span>
+<span class="menu-price">$209</span>
+<button class="add-btn" data-name="Combo Triple Monster" data-price="209" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+</div>
+</div></div></section>
+
+<section id="papas" class="section"><div class="container"><div class="surface section-surface">
+<div class="section-head">
+<span class="kicker"><span class="dot"></span> Papas &amp; sides</span>
+<h2>Para <span class="grad-text">compartir</span> (o no)</h2>
+<p>El complemento perfecto para tu combo. Crujientes, doradas y con toppings generosos.</p>
+</div>
+
+<div class="menu-grid menu-grid-3">
+
+<article class="menu-item" data-cat="papas">
+<div class="menu-art menu-art-side" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><g stroke="#ffd84a" stroke-width="3" stroke-linecap="round" fill="none"><line x1="40" y1="70" x2="50" y2="110"/><line x1="65" y1="60" x2="70" y2="115"/><line x1="90" y1="65" x2="85" y2="118"/><line x1="115" y1="55" x2="125" y2="115"/><line x1="145" y1="65" x2="140" y2="118"/><line x1="55" y1="75" x2="60" y2="112"/><line x1="100" y1="60" x2="105" y2="115"/><line x1="130" y1="70" x2="135" y2="115"/></g><rect x="30" y="110" width="140" height="10" rx="2" fill="#c2410c" opacity="0.4"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Side</span>
+<h3>Papas a la francesa</h3>
+<p>Crujientes por fuera, suaves por dentro. Porción individual.</p>
+<div class="menu-foot">
+<span class="menu-price">$45</span>
+<button class="add-btn" data-name="Papas a la francesa" data-price="45" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="papas">
+<div class="menu-art menu-art-side" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><g stroke="#ffd84a" stroke-width="3" stroke-linecap="round" fill="none"><line x1="40" y1="70" x2="50" y2="110"/><line x1="65" y1="60" x2="70" y2="115"/><line x1="90" y1="65" x2="85" y2="118"/><line x1="115" y1="55" x2="125" y2="115"/><line x1="145" y1="65" x2="140" y2="118"/></g><g fill="#7a4a18"><circle cx="55" cy="80" r="2"/><circle cx="80" cy="85" r="2"/><circle cx="110" cy="78" r="2"/><circle cx="135" cy="82" r="2"/><circle cx="70" cy="95" r="2"/><circle cx="120" cy="98" r="2"/></g><rect x="30" y="110" width="140" height="10" rx="2" fill="#5a3a18" opacity="0.5"/></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Side</span>
+<h3>Papas con cheddar y bacon</h3>
+<p>Bañadas en cheddar derretido, trocitos de bacon y cebollín.</p>
+<div class="menu-foot">
+<span class="menu-price">$69</span>
+<button class="add-btn" data-name="Papas con cheddar y bacon" data-price="69" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item" data-cat="papas">
+<div class="menu-art menu-art-side" aria-hidden="true">
+<svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#1a1209"/><g fill="none" stroke="#ffd84a" stroke-width="2"><circle cx="60" cy="80" r="22"/><circle cx="120" cy="78" r="22"/><circle cx="90" cy="100" r="22"/><circle cx="140" cy="105" r="22"/></g><g fill="#a01a10" opacity="0.5"><circle cx="60" cy="80" r="2"/><circle cx="120" cy="78" r="2"/><circle cx="90" cy="100" r="2"/><circle cx="140" cy="105" r="2"/></g></svg>
+</div>
+<div class="menu-body">
+<span class="menu-tag">Side</span>
+<h3>Aros de cebolla</h3>
+<p>Aros crujientes con empanizado especial. 8 unidades con salsa ranch.</p>
+<div class="menu-foot">
+<span class="menu-price">$55</span>
+<button class="add-btn" data-name="Aros de cebolla" data-price="55" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+</div>
+</div></div></section>
+
+<section id="bebidas" class="section"><div class="container"><div class="surface section-surface">
+<div class="section-head">
+<span class="kicker"><span class="dot"></span> Bebidas</span>
+<h2>Para <span class="grad-text">refrescar</span> el mordisco</h2>
+<p>Refrescos, aguas frescas y malteadas. Todos los tamaños de 600 ml.</p>
+</div>
+
+<div class="menu-grid menu-grid-3">
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Refresco</span>
+<h3>Coca-Cola · Sprite · Fanta</h3>
+<p>Botella 600 ml, bien fría.</p>
+<div class="menu-foot">
+<span class="menu-price">$35</span>
+<button class="add-btn" data-name="Refresco 600ml" data-price="35" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Agua fresca</span>
+<h3>Horchata · Jamaica</h3>
+<p>Jarra 600 ml preparada al momento.</p>
+<div class="menu-foot">
+<span class="menu-price">$30</span>
+<button class="add-btn" data-name="Agua fresca 600ml" data-price="30" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Premium</span>
+<h3>Malteada Smash</h3>
+<p>Vainilla, chocolate o fresa con crema batida y galleta.</p>
+<div class="menu-foot">
+<span class="menu-price">$55</span>
+<button class="add-btn" data-name="Malteada Smash" data-price="55" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Cerveza</span>
+<h3>Cerveza nacional</h3>
+<p>Victoria, Modelo o Pacifico. Botella 355 ml. Solo para mayores de 18.</p>
+<div class="menu-foot">
+<span class="menu-price">$45</span>
+<button class="add-btn" data-name="Cerveza" data-price="45" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Café</span>
+<h3>Café americano</h3>
+<p>Taza 250 ml. Calientito o frappe.</p>
+<div class="menu-foot">
+<span class="menu-price">$35</span>
+<button class="add-btn" data-name="Café americano" data-price="35" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="bebidas">
+<div class="menu-body">
+<span class="menu-tag">Limonada</span>
+<h3>Limonada de la casa</h3>
+<p>Limón natural con un toque de menta y hielo frappé.</p>
+<div class="menu-foot">
+<span class="menu-price">$40</span>
+<button class="add-btn" data-name="Limonada" data-price="40" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+</div>
+</div></div></section>
+
+<section id="postres" class="section"><div class="container"><div class="surface section-surface">
+<div class="section-head">
+<span class="kicker"><span class="dot"></span> Postres</span>
+<h2>El <span class="grad-text">final</span> perfecto</h2>
+<p>Para los que siempre tienen un huequito.</p>
+</div>
+
+<div class="menu-grid menu-grid-3">
+
+<article class="menu-item menu-item-flat" data-cat="postres">
+<div class="menu-body">
+<span class="menu-tag">Brownie</span>
+<h3>Brownie con helado</h3>
+<p>Brownie tibio de chocolate con bola de vainilla y fudge.</p>
+<div class="menu-foot">
+<span class="menu-price">$55</span>
+<button class="add-btn" data-name="Brownie con helado" data-price="55" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="postres">
+<div class="menu-body">
+<span class="menu-tag">Cookie</span>
+<h3>Cookie skillet</h3>
+<p>Galleta gigante horneada en sartén con helado y chocolate.</p>
+<div class="menu-foot">
+<span class="menu-price">$65</span>
+<button class="add-btn" data-name="Cookie skillet" data-price="65" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+<article class="menu-item menu-item-flat" data-cat="postres">
+<div class="menu-body">
+<span class="menu-tag">Helado</span>
+<h3>Cono de helado</h3>
+<p>Dos bolas de helado, cono crujiente. Sabores a elegir.</p>
+<div class="menu-foot">
+<span class="menu-price">$40</span>
+<button class="add-btn" data-name="Cono de helado" data-price="40" type="button">+ Agregar</button>
+</div>
+</div>
+</article>
+
+</div>
+</div></div></section>
+
+<section class="section section-cta-pedido"><div class="container"><div class="surface section-surface section-dark">
+<div class="cta-grid">
+<div class="cta-copy">
+<span class="kicker kicker-light"><span class="dot"></span> ¿Listo para pedir?</span>
+<h2>Confirma tu pedido <span class="grad-text">por WhatsApp</span>.</h2>
+<p>Agrega lo que quieras al carrito y al final te enviaremos el resumen listo para confirmar. También puedes escribirnos directo y te atendemos al toque.</p>
+<div class="cta-actions">
+<a class="button button-lg" id="checkout-btn" href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Confirmar por WhatsApp</a>
+<a class="button-ghost button-lg" href="index.html#domicilio">Ver cómo funciona</a>
+</div>
+</div>
+
+<div class="delivery-info">
+<div class="delivery-card"><div class="delivery-icon">🛵</div><div class="delivery-text"><strong>Envío a domicilio</strong><span>Zona norte, centro y sur de Mérida.</span></div></div>
+<div class="delivery-card"><div class="delivery-icon">⏱️</div><div class="delivery-text"><strong>25–35 min</strong><span>Promedio una vez hecho el pedido.</span></div></div>
+<div class="delivery-card"><div class="delivery-icon">💵</div><div class="delivery-text"><strong>Efectivo o transferencia</strong><span>Pagas al recibir o por SPEI antes del envío.</span></div></div>
+</div>
+</div>
+</div></div></section>
+
+</main>
+
+<aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Carrito de pedido">
+<div class="cart-backdrop" data-cart-close></div>
+<div class="cart-panel" role="dialog" aria-modal="true">
+<div class="cart-head">
+<div>
+<span class="kicker"><span class="dot"></span> Tu pedido</span>
+<h2 class="cart-title">Carrito</h2>
+</div>
+<button class="cart-x" type="button" data-cart-close aria-label="Cerrar carrito">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+</button>
+</div>
+
+<div class="cart-items" id="cart-items">
+<p class="cart-empty">Aún no agregaste nada. Toca <strong>+ Agregar</strong> en tu burger favorita 🔥</p>
+</div>
+
+<div class="cart-summary" id="cart-summary" hidden>
+<div class="cart-row"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
+<div class="cart-row"><span>Envío</span><span>Por confirmar</span></div>
+<div class="cart-row cart-row-total"><span>Total estimado</span><span id="cart-grand">$0</span></div>
+</div>
+
+<div class="cart-foot">
+<button class="button cart-checkout" id="cart-checkout" type="button" disabled>Confirmar por WhatsApp</button>
+<button class="cart-clear" id="cart-clear" type="button">Vaciar carrito</button>
+</div>
+</div>
+</aside>
+
+<footer class="site-footer"><div class="container"><div class="footer-card">
+<div class="footer-brand">
+<span class="brand-mark small"><svg viewBox="0 0 64 64"><defs><linearGradient id="brandGradF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffd84a"/><stop offset="100%" stop-color="#f2a900"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0c0a08" stroke="#ffd84a" stroke-width="2"/><rect x="6" y="6" width="52" height="52" rx="11" fill="url(#brandGradF)"/><g transform="translate(32 32)"><rect x="-22" y="-13" width="44" height="7" rx="3" fill="#c2410c"/><rect x="-20" y="-3" width="40" height="6" rx="3" fill="#0c0a08"/><rect x="-22" y="6" width="44" height="7" rx="3" fill="#c2410c"/></g></svg></span>
+<div><strong>Smash House</strong><span>Hamburguesas a la parrilla · Mérida</span></div>
+</div>
+<nav class="footer-nav">
+<a href="index.html">Inicio</a>
+<a href="menu.html">Menú</a>
+<a href="inventario.html">Inventario</a>
+<a href="galeria.html">Galería</a>
+<a href="index.html#especialidades">Especialidades</a>
+<a href="index.html#domicilio">A domicilio</a>
+<a href="index.html#contacto">Contacto</a>
+</nav>
+<div class="footer-meta">
+<span>© <span id="year">2026</span> Smash House · Todos los derechos reservados</span>
+<span class="footer-dot">·</span>
+<span>Hecho con 🔥 en Mérida</span>
+</div>
+</div></div></footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* === Año dinámico === */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* === Filtros por categoría === */
+(function(){
+  const tabs = document.querySelectorAll('.menu-tabs .tab');
+  const items = document.querySelectorAll('.menu-item');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected','false'); });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected','true');
+      const filter = tab.dataset.filter;
+      items.forEach(it => {
+        const show = filter === 'all' || it.dataset.cat === filter;
+        it.style.display = show ? '' : 'none';
+      });
+    });
+  });
+})();
+
+/* === Carrito === */
+(function(){
+  const cart = [];
+  const drawer = document.getElementById('cart-drawer');
+  const itemsEl = document.getElementById('cart-items');
+  const summaryEl = document.getElementById('cart-summary');
+  const subtotalEl = document.getElementById('cart-subtotal');
+  const grandEl = document.getElementById('cart-grand');
+  const countEl = document.getElementById('cart-count');
+  const totalEl = document.getElementById('cart-total');
+  const checkoutBtn = document.getElementById('cart-checkout');
+  const clearBtn = document.getElementById('cart-clear');
+  const ctaCheckout = document.getElementById('checkout-btn');
+  const toggle = document.getElementById('cart-toggle');
+  const toast = document.getElementById('toast');
+
+  const money = n => '$' + n.toLocaleString('es-MX');
+  const total = () => cart.reduce((s,i) => s + i.price*i.qty, 0);
+  const count = () => cart.reduce((s,i) => s + i.qty, 0);
+
+  function notify(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-visible');
+    clearTimeout(notify._t);
+    notify._t = setTimeout(() => toast.classList.remove('is-visible'), 1800);
+  }
+
+  function render(){
+    const c = count();
+    const t = total();
+    countEl.textContent = c;
+    totalEl.textContent = money(t);
+
+    if (!cart.length){
+      itemsEl.innerHTML = '<p class="cart-empty">Aún no agregaste nada. Toca <strong>+ Agregar</strong> en tu burger favorita 🔥</p>';
+      summaryEl.hidden = true;
+      checkoutBtn.disabled = true;
+      ctaCheckout.setAttribute('href','#');
+      return;
+    }
+
+    summaryEl.hidden = false;
+    subtotalEl.textContent = money(t);
+    grandEl.textContent = money(t);
+    checkoutBtn.disabled = false;
+
+    itemsEl.innerHTML = cart.map((it, idx) => `
+      <article class="cart-line">
+        <div class="cart-line-info">
+          <strong>${it.name}</strong>
+          <span class="cart-line-price">${money(it.price)} c/u</span>
+        </div>
+        <div class="cart-line-actions">
+          <button class="qty-btn" type="button" data-act="dec" data-i="${idx}" aria-label="Quitar uno">−</button>
+          <span class="qty-num">${it.qty}</span>
+          <button class="qty-btn" type="button" data-act="inc" data-i="${idx}" aria-label="Sumar uno">+</button>
+          <span class="cart-line-sub">${money(it.price*it.qty)}</span>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  function addToCart(name, price){
+    const found = cart.find(c => c.name === name);
+    if (found) found.qty += 1;
+    else cart.push({ name, price: Number(price), qty: 1 });
+    render();
+    notify('✓ ' + name + ' agregado');
+  }
+
+  function openDrawer(){
+    drawer.classList.add('is-open');
+    drawer.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer(){
+    drawer.classList.remove('is-open');
+    drawer.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  /* Botones "+ Agregar" */
+  document.querySelectorAll('.add-btn').forEach(btn => {
+    btn.addEventListener('click', () => addToCart(btn.dataset.name, btn.dataset.price));
+  });
+
+  /* Cantidades dentro del carrito */
+  itemsEl.addEventListener('click', e => {
+    const btn = e.target.closest('.qty-btn');
+    if (!btn) return;
+    const i = Number(btn.dataset.i);
+    if (btn.dataset.act === 'inc') cart[i].qty += 1;
+    else {
+      cart[i].qty -= 1;
+      if (cart[i].qty <= 0) cart.splice(i,1);
+    }
+    render();
+  });
+
+  /* Vaciar */
+  clearBtn.addEventListener('click', () => { cart.length = 0; render(); notify('Carrito vacío'); });
+
+  /* Toggle del drawer */
+  toggle.addEventListener('click', () => drawer.classList.contains('is-open') ? closeDrawer() : openDrawer());
+  drawer.querySelectorAll('[data-cart-close]').forEach(el => el.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeDrawer(); });
+
+  /* WhatsApp checkout */
+  function sendToWhatsApp(){
+    if (!cart.length) return;
+    const lines = cart.map(it => `• ${it.qty} × ${it.name} (${money(it.price)}) = ${money(it.price*it.qty)}`);
+    const msg = `Hola Smash House, quiero hacer este pedido a domicilio:%0A%0A${lines.join('%0A')}%0A%0ATotal estimado: ${money(total())}%0A%0A¿Me confirman disponibilidad y tiempo de envío?`;
+    const url = `https://wa.me/529991112233?text=${msg}`;
+    window.open(url, '_blank', 'noopener');
+  }
+  checkoutBtn.addEventListener('click', sendToWhatsApp);
+  ctaCheckout.addEventListener('click', e => {
+    e.preventDefault();
+    if (cart.length) sendToWhatsApp();
+    else { openDrawer(); notify('Agrega productos al carrito primero'); }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
